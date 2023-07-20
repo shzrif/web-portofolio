@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Web</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Center the loader */
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #3498db;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite; /* Safari */
+      animation: spin 2s linear infinite;
+    }
+    
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+      /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+    @keyframes animatebottom { 
+      from{ bottom:-100px; opacity:0 } 
+      to{ bottom:0; opacity:1 }
+    }
+
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+    </style>
+</head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader" id="loader"></div>
+      <p id="loadingText">Loading...</p>
+    </div>
+
+  <canvas id="bg"></canvas>   
+
+  <main>
+
+    <header>
+      <h1>Hi.</h1>
+      <p>And welcome! 🚀</p> <h4>Buckle your seatbelts!</h4>
+    </header>
+
+    <blockquote>
+      <p>I'm Sharif Fatih M. I enjoy playing video games, listening to music, and learning IT/mathematics subjects.</p>
+    </blockquote>
+
+    <section>
+      <h2>About me</h2>
+      <p>
+        I'm an undergraduate student @ University of Indonesia class of 2022 - 2026 majoring in Computer Engineering (specialize in CS).
+      </p>
+
+      <p>
+        I believe that the tech industry and experimenting with new gadgets offers me to adapt to real world changing.
+      </p>
+
+      <p>
+        Currently, I am participating in a digital online Dicoding boot camp and have been granted scholarships for learning software development and related fields.
+      </p>
+
+    </section>
+
+    <section class="light">
+      <h2>Projects</h2>
+
+      <p>
+        Other projects are still in development.
+      </p>
+
+    </section>
+
+    <blockquote>
+      <p>The best way out is always through <br>-Robert Frost</p>
+    </blockquote>
+
+    <section class="left">
+      <h2>Experience</h2>
+
+      <h3>Google Developer Student Club</h3>
+      <h5>Nov 2022 - Present</h5>
+      <p>
+        Community of Google Cloud Innovator, Android Studio user, Enroll in Cloud Engineer/IAM learning path.
+      </p>
+      <h3>MPM FTUI</h3>
+      <h5>Feb 2023 - Present</h5>
+      <p>
+        Responsible for an internal type of duty such as archived documentation and coordinating the use and maintenance of assets as well as record attendance and time management of meetings or forums
+      </p>
+      <h3>Asyraaf UI/PNJ</h3>
+      <h5>June 2023 - Present</h5>
+      <p>
+        Volunteered for open events, growing skills and connections with the community.
+      </p>
+
+    </section>
+
+    <blockquote>
+      <p>Thanks for visiting!</p>
+    </blockquote>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:shareefmasyhur@gmail.com">shareefmasyhur@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/sharifmasyhur" target="_blank">My LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/shzrif" target="_blank">GitHub</a></p>
+    </section>
+
+  </main>
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+  
+  <script type="module" src="/main.js"></script>
+
+</body>
+</html>
